@@ -1,0 +1,8 @@
+supplier_id,supplier_name,onboarding_status,risk,tax_verified
+S-01,BlueRiver Tech,approved,low,yes
+S-02,QuickGoods Ltd,approved,medium,yes
+S-03,LowestBid Traders,pending,high,no
+S-04,ValueWorks,approved,low,yes
+S-05,Global Parts,suspended,high,no
+S-06,OfficeCraft,approved,medium,yes
+S-07,PrintHub,approved,low,yes

@@ -1,0 +1,12 @@
+langgraph
+langchain
+langchain-core
+langchain-openai
+langchain-community
+crewai
+autogen-agentchat
+autogen-ext[openai]
+pydantic
+python-dotenv
+pandas
+pytest

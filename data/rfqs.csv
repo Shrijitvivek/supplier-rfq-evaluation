@@ -1,0 +1,7 @@
+rfq_id,category,requested_qty,max_unit_budget_inr,required_by
+RFQ-101,Laptops,30,52000,2026-12-15
+RFQ-102,Office chairs,80,8000,2026-12-10
+RFQ-103,Monitors,40,15000,2026-12-20
+RFQ-104,Network switches,12,34000,2026-12-18
+RFQ-105,Printers,20,19000,2026-12-22
+RFQ-106,Headsets,100,2200,2026-12-19
