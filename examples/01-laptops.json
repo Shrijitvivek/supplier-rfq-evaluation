@@ -1,0 +1,128 @@
+[
+  {
+    "evaluation": {
+      "rfq_id": "RFQ-101",
+      "status": "AWAITING_APPROVAL",
+      "recommended_quote": "Q-101",
+      "quotes": [
+        {
+          "quote": {
+            "quote_id": "Q-101",
+            "rfq_id": "RFQ-101",
+            "supplier_id": "S-01",
+            "unit_price_inr": "51000",
+            "offered_qty": 30,
+            "promised_delivery": "2026-12-10",
+            "tax_percent": "12"
+          },
+          "classification": "COMPLIANT",
+          "tax_inclusive_total_inr": "1713600.00",
+          "reasons": [],
+          "duplicate_of": null,
+          "policy_citations": [
+            "R1",
+            "R2",
+            "R3",
+            "R4",
+            "R5",
+            "R6",
+            "R9"
+          ]
+        },
+        {
+          "quote": {
+            "quote_id": "Q-102",
+            "rfq_id": "RFQ-101",
+            "supplier_id": "S-02",
+            "unit_price_inr": "47000",
+            "offered_qty": 30,
+            "promised_delivery": "2026-12-21",
+            "tax_percent": "12"
+          },
+          "classification": "NON_COMPLIANT",
+          "tax_inclusive_total_inr": "1579200.00",
+          "reasons": [
+            "LATE_DELIVERY"
+          ],
+          "duplicate_of": null,
+          "policy_citations": [
+            "R1",
+            "R2",
+            "R3",
+            "R4"
+          ]
+        },
+        {
+          "quote": {
+            "quote_id": "Q-103",
+            "rfq_id": "RFQ-101",
+            "supplier_id": "S-03",
+            "unit_price_inr": "42000",
+            "offered_qty": 30,
+            "promised_delivery": "2026-12-07",
+            "tax_percent": "12"
+          },
+          "classification": "INELIGIBLE",
+          "tax_inclusive_total_inr": "1411200.00",
+          "reasons": [
+            "INELIGIBLE_SUPPLIER"
+          ],
+          "duplicate_of": null,
+          "policy_citations": [
+            "R1",
+            "R2",
+            "R4"
+          ]
+        }
+      ],
+      "information_needed": [],
+      "contract_awarded": false
+    },
+    "explanation": {
+      "rfq_id": "RFQ-101",
+      "summary": "Recommend Q-101 from supplier S-01 for RFQ-101.",
+      "next_action": "Obtain human procurement approval before awarding or contacting a supplier.",
+      "policy_citations": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R9"
+      ],
+      "quote_explanations": [
+        {
+          "quote_id": "Q-101",
+          "evidence_ids": [
+            "supplier_quotes.csv:Q-101",
+            "rfqs.csv:RFQ-101",
+            "suppliers.csv:S-01",
+            "supplier_performance.csv:S-01"
+          ],
+          "narrative": "Q-101 was classified COMPLIANT. Its tax-inclusive total is INR 1713600.00."
+        },
+        {
+          "quote_id": "Q-102",
+          "evidence_ids": [
+            "supplier_quotes.csv:Q-102",
+            "rfqs.csv:RFQ-101",
+            "suppliers.csv:S-02",
+            "supplier_performance.csv:S-02"
+          ],
+          "narrative": "Q-102 was classified NON_COMPLIANT. Its tax-inclusive total is INR 1579200.00. Recorded reasons: LATE_DELIVERY."
+        },
+        {
+          "quote_id": "Q-103",
+          "evidence_ids": [
+            "supplier_quotes.csv:Q-103",
+            "rfqs.csv:RFQ-101",
+            "suppliers.csv:S-03",
+            "supplier_performance.csv:S-03"
+          ],
+          "narrative": "Q-103 was classified INELIGIBLE. Its tax-inclusive total is INR 1411200.00. Recorded reasons: INELIGIBLE_SUPPLIER."
+        }
+      ]
+    }
+  }
+]

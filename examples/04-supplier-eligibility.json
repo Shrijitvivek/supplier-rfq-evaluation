@@ -1,0 +1,188 @@
+[
+  {
+    "evaluation": {
+      "rfq_id": "RFQ-104",
+      "status": "AWAITING_APPROVAL",
+      "recommended_quote": "Q-108",
+      "quotes": [
+        {
+          "quote": {
+            "quote_id": "Q-108",
+            "rfq_id": "RFQ-104",
+            "supplier_id": "S-01",
+            "unit_price_inr": "33100",
+            "offered_qty": 12,
+            "promised_delivery": "2026-12-17",
+            "tax_percent": "12"
+          },
+          "classification": "COMPLIANT",
+          "tax_inclusive_total_inr": "444864.00",
+          "reasons": [],
+          "duplicate_of": null,
+          "policy_citations": [
+            "R1",
+            "R2",
+            "R3",
+            "R4",
+            "R5",
+            "R6",
+            "R9"
+          ]
+        },
+        {
+          "quote": {
+            "quote_id": "Q-109",
+            "rfq_id": "RFQ-104",
+            "supplier_id": "S-05",
+            "unit_price_inr": "29000",
+            "offered_qty": 12,
+            "promised_delivery": "2026-12-15",
+            "tax_percent": "12"
+          },
+          "classification": "INELIGIBLE",
+          "tax_inclusive_total_inr": "389760.00",
+          "reasons": [
+            "INELIGIBLE_SUPPLIER"
+          ],
+          "duplicate_of": null,
+          "policy_citations": [
+            "R1",
+            "R2",
+            "R4"
+          ]
+        }
+      ],
+      "information_needed": [],
+      "contract_awarded": false
+    },
+    "explanation": {
+      "rfq_id": "RFQ-104",
+      "summary": "Recommend Q-108 from supplier S-01 for RFQ-104.",
+      "next_action": "Obtain human procurement approval before awarding or contacting a supplier.",
+      "policy_citations": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R9"
+      ],
+      "quote_explanations": [
+        {
+          "quote_id": "Q-108",
+          "evidence_ids": [
+            "supplier_quotes.csv:Q-108",
+            "rfqs.csv:RFQ-104",
+            "suppliers.csv:S-01",
+            "supplier_performance.csv:S-01"
+          ],
+          "narrative": "Q-108 was classified COMPLIANT. Its tax-inclusive total is INR 444864.00."
+        },
+        {
+          "quote_id": "Q-109",
+          "evidence_ids": [
+            "supplier_quotes.csv:Q-109",
+            "rfqs.csv:RFQ-104",
+            "suppliers.csv:S-05",
+            "supplier_performance.csv:S-05"
+          ],
+          "narrative": "Q-109 was classified INELIGIBLE. Its tax-inclusive total is INR 389760.00. Recorded reasons: INELIGIBLE_SUPPLIER."
+        }
+      ]
+    }
+  },
+  {
+    "evaluation": {
+      "rfq_id": "RFQ-106",
+      "status": "AWAITING_APPROVAL",
+      "recommended_quote": "Q-112",
+      "quotes": [
+        {
+          "quote": {
+            "quote_id": "Q-112",
+            "rfq_id": "RFQ-106",
+            "supplier_id": "S-06",
+            "unit_price_inr": "2150",
+            "offered_qty": 100,
+            "promised_delivery": "2026-12-17",
+            "tax_percent": "12"
+          },
+          "classification": "COMPLIANT",
+          "tax_inclusive_total_inr": "240800.00",
+          "reasons": [],
+          "duplicate_of": null,
+          "policy_citations": [
+            "R1",
+            "R2",
+            "R3",
+            "R4",
+            "R5",
+            "R6",
+            "R9"
+          ]
+        },
+        {
+          "quote": {
+            "quote_id": "Q-113",
+            "rfq_id": "RFQ-106",
+            "supplier_id": "S-03",
+            "unit_price_inr": "1900",
+            "offered_qty": 100,
+            "promised_delivery": "2026-12-16",
+            "tax_percent": "12"
+          },
+          "classification": "INELIGIBLE",
+          "tax_inclusive_total_inr": "212800.00",
+          "reasons": [
+            "INELIGIBLE_SUPPLIER"
+          ],
+          "duplicate_of": null,
+          "policy_citations": [
+            "R1",
+            "R2",
+            "R4"
+          ]
+        }
+      ],
+      "information_needed": [],
+      "contract_awarded": false
+    },
+    "explanation": {
+      "rfq_id": "RFQ-106",
+      "summary": "Recommend Q-112 from supplier S-06 for RFQ-106.",
+      "next_action": "Obtain human procurement approval before awarding or contacting a supplier.",
+      "policy_citations": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R9"
+      ],
+      "quote_explanations": [
+        {
+          "quote_id": "Q-112",
+          "evidence_ids": [
+            "supplier_quotes.csv:Q-112",
+            "rfqs.csv:RFQ-106",
+            "suppliers.csv:S-06",
+            "supplier_performance.csv:S-06"
+          ],
+          "narrative": "Q-112 was classified COMPLIANT. Its tax-inclusive total is INR 240800.00."
+        },
+        {
+          "quote_id": "Q-113",
+          "evidence_ids": [
+            "supplier_quotes.csv:Q-113",
+            "rfqs.csv:RFQ-106",
+            "suppliers.csv:S-03",
+            "supplier_performance.csv:S-03"
+          ],
+          "narrative": "Q-113 was classified INELIGIBLE. Its tax-inclusive total is INR 212800.00. Recorded reasons: INELIGIBLE_SUPPLIER."
+        }
+      ]
+    }
+  }
+]
