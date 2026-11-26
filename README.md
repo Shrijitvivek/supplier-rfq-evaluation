@@ -35,3 +35,40 @@ example = json.loads(Path("examples/05-printers.json").read_text(encoding="utf-8
 result = build_explanation_chain(load_data()).invoke(example["evaluation"])
 print(result.model_dump_json(indent=2))
 ```
+
+## CrewAI and AutoGen advisory reviews
+
+The Adarsh adapters add independent advisory reviews to a LangGraph workflow without changing
+the deterministic evaluation or invoking approval. Both nodes accept a state containing the
+validated pre-approval `evaluation` and its `procurement_facts`, and return their result under
+`crewai_review` or `autogen_review`.
+
+```python
+from app.autogen_adapter import create_autogen_adapter
+from app.crewai_adapter import create_crewai_adapter
+
+crew_node = create_crewai_adapter()
+autogen_node = create_autogen_adapter()
+
+async def review(state):
+    crew_update = crew_node(state)
+    autogen_update = await autogen_node(state)
+    return crew_update, autogen_update
+```
+
+The CrewAI team runs the Buyer and Supplier-Risk Analyst tasks sequentially. AutoGen runs the
+Cost Reviewer and Compliance Reviewer in a bounded round-robin chat. Both adapters validate
+structured outputs, reject missing reviewer results, and set `contract_awarded` to `false`.
+Their findings are advisory: the deterministic rules remain authoritative and a human must
+approve before any simulated award.
+
+Install the requirements and set `OPENAI_API_KEY` before running live reviews. CrewAI uses
+`CREWAI_MODEL` (default `openai/gpt-4o-mini`); AutoGen uses `AUTOGEN_MODEL` (default
+`gpt-4o-mini`). Tests use fake framework runs and do not call a model:
+
+```powershell
+python -m pytest tests/test_crewai.py tests/test_autogen.py
+```
+
+See [docs/architecture.png](docs/architecture.png) for the application flow and the separation
+between advisory reviews and the human approval/award boundary.
