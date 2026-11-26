@@ -38,7 +38,7 @@ print(result.model_dump_json(indent=2))
 
 ## CrewAI and AutoGen advisory reviews
 
-The Adarsh adapters add independent advisory reviews to a LangGraph workflow without changing
+The adapters add independent advisory reviews to a LangGraph workflow without changing
 the deterministic evaluation or invoking approval. Both nodes accept a state containing the
 validated pre-approval `evaluation` and its `procurement_facts`, and return their result under
 `crewai_review` or `autogen_review`.
