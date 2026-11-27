@@ -1,3 +1,4 @@
+from autogen_agentchat.messages import StructuredMessage
 """AutoGen challenge reviewers and their asynchronous LangGraph node adapter."""
 
 import os
@@ -66,7 +67,8 @@ def build_challenge_team(model_client: Any | None = None) -> Any:
     return RoundRobinGroupChat(
         [cost_reviewer, compliance_reviewer],
         termination_condition=MaxMessageTermination(max_messages=3),
-    )
+    
+        custom_message_types=[StructuredMessage[CostReview], StructuredMessage[ComplianceReview]],)
 
 
 def _parse_output(model: type[ProcurementModel], content: Any) -> ProcurementModel:
