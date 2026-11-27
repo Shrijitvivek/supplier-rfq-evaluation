@@ -1,0 +1,40 @@
+{
+  "framework": "LangChain LCEL local explanation chain",
+  "python": "3.12.8",
+  "platform": "Linux-6.17.0-20-generic-x86_64-with-glibc2.39",
+  "warmup_runs_per_case": 10,
+  "measured_runs_per_case": 100,
+  "measurement": "Median wall time per case; source CSV/JSON loading excluded.",
+  "cases": [
+    {
+      "case": "01-laptops",
+      "rfqs": 1,
+      "median_ms": 0.483,
+      "model_calls": 0
+    },
+    {
+      "case": "02-chairs",
+      "rfqs": 1,
+      "median_ms": 1.097,
+      "model_calls": 0
+    },
+    {
+      "case": "03-monitors",
+      "rfqs": 1,
+      "median_ms": 0.666,
+      "model_calls": 0
+    },
+    {
+      "case": "04-supplier-eligibility",
+      "rfqs": 2,
+      "median_ms": 1.55,
+      "model_calls": 0
+    },
+    {
+      "case": "05-printers",
+      "rfqs": 1,
+      "median_ms": 0.823,
+      "model_calls": 0
+    }
+  ]
+}

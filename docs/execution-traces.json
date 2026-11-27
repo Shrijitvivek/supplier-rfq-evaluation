@@ -1,0 +1,190 @@
+{
+  "generated_at": "2026-11-27T08:46:10.682376+00:00",
+  "approval_policy": "No approval was supplied; no award was recorded.",
+  "traces": [
+    {
+      "rfq_id": "RFQ-101",
+      "advisory_reviews": "not invoked; deterministic offline trace",
+      "events": [
+        {
+          "node": "evaluate",
+          "status": "AWAITING_APPROVAL",
+          "recommendation": "Q-101",
+          "quotes": [
+            {
+              "quote_id": "Q-101",
+              "classification": "COMPLIANT",
+              "duplicate_of": null
+            },
+            {
+              "quote_id": "Q-102",
+              "classification": "NON_COMPLIANT",
+              "duplicate_of": null
+            },
+            {
+              "quote_id": "Q-103",
+              "classification": "INELIGIBLE",
+              "duplicate_of": null
+            }
+          ],
+          "contract_awarded": false
+        },
+        {
+          "node": "approval",
+          "status": "AWAITING_HUMAN",
+          "contract_awarded": false
+        }
+      ]
+    },
+    {
+      "rfq_id": "RFQ-102",
+      "advisory_reviews": "not invoked; deterministic offline trace",
+      "events": [
+        {
+          "node": "evaluate",
+          "status": "AWAITING_APPROVAL",
+          "recommendation": "Q-104",
+          "quotes": [
+            {
+              "quote_id": "Q-104",
+              "classification": "COMPLIANT",
+              "duplicate_of": null
+            },
+            {
+              "quote_id": "Q-105",
+              "classification": "NON_COMPLIANT",
+              "duplicate_of": null
+            }
+          ],
+          "contract_awarded": false
+        },
+        {
+          "node": "approval",
+          "status": "AWAITING_HUMAN",
+          "contract_awarded": false
+        }
+      ]
+    },
+    {
+      "rfq_id": "RFQ-103",
+      "advisory_reviews": "not invoked; deterministic offline trace",
+      "events": [
+        {
+          "node": "evaluate",
+          "status": "AWAITING_APPROVAL",
+          "recommendation": "Q-106",
+          "quotes": [
+            {
+              "quote_id": "Q-106",
+              "classification": "COMPLIANT",
+              "duplicate_of": null
+            },
+            {
+              "quote_id": "Q-107",
+              "classification": "NON_COMPLIANT",
+              "duplicate_of": null
+            }
+          ],
+          "contract_awarded": false
+        },
+        {
+          "node": "approval",
+          "status": "AWAITING_HUMAN",
+          "contract_awarded": false
+        }
+      ]
+    },
+    {
+      "rfq_id": "RFQ-104",
+      "advisory_reviews": "not invoked; deterministic offline trace",
+      "events": [
+        {
+          "node": "evaluate",
+          "status": "AWAITING_APPROVAL",
+          "recommendation": "Q-108",
+          "quotes": [
+            {
+              "quote_id": "Q-108",
+              "classification": "COMPLIANT",
+              "duplicate_of": null
+            },
+            {
+              "quote_id": "Q-109",
+              "classification": "INELIGIBLE",
+              "duplicate_of": null
+            }
+          ],
+          "contract_awarded": false
+        },
+        {
+          "node": "approval",
+          "status": "AWAITING_HUMAN",
+          "contract_awarded": false
+        }
+      ]
+    },
+    {
+      "rfq_id": "RFQ-106",
+      "advisory_reviews": "not invoked; deterministic offline trace",
+      "events": [
+        {
+          "node": "evaluate",
+          "status": "AWAITING_APPROVAL",
+          "recommendation": "Q-112",
+          "quotes": [
+            {
+              "quote_id": "Q-112",
+              "classification": "COMPLIANT",
+              "duplicate_of": null
+            },
+            {
+              "quote_id": "Q-113",
+              "classification": "INELIGIBLE",
+              "duplicate_of": null
+            }
+          ],
+          "contract_awarded": false
+        },
+        {
+          "node": "approval",
+          "status": "AWAITING_HUMAN",
+          "contract_awarded": false
+        }
+      ]
+    },
+    {
+      "rfq_id": "RFQ-105",
+      "advisory_reviews": "not invoked; deterministic offline trace",
+      "events": [
+        {
+          "node": "evaluate",
+          "status": "AWAITING_APPROVAL",
+          "recommendation": "Q-110",
+          "quotes": [
+            {
+              "quote_id": "Q-110",
+              "classification": "COMPLIANT",
+              "duplicate_of": null
+            },
+            {
+              "quote_id": "Q-111",
+              "classification": "COMPLIANT",
+              "duplicate_of": null
+            },
+            {
+              "quote_id": "Q-114",
+              "classification": "COMPLIANT",
+              "duplicate_of": "Q-110"
+            }
+          ],
+          "contract_awarded": false
+        },
+        {
+          "node": "approval",
+          "status": "AWAITING_HUMAN",
+          "contract_awarded": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+[
+  {
+    "evaluation": {
+      "rfq_id": "RFQ-103",
+      "status": "AWAITING_APPROVAL",
+      "recommended_quote": "Q-106",
+      "quotes": [
+        {
+          "quote": {
+            "quote_id": "Q-106",
+            "rfq_id": "RFQ-103",
+            "supplier_id": "S-01",
+            "unit_price_inr": "14900",
+            "offered_qty": 40,
+            "promised_delivery": "2026-12-18",
+            "tax_percent": "12"
+          },
+          "classification": "COMPLIANT",
+          "tax_inclusive_total_inr": "667520.00",
+          "reasons": [],
+          "duplicate_of": null,
+          "policy_citations": [
+            "R1",
+            "R2",
+            "R3",
+            "R4",
+            "R5",
+            "R6",
+            "R9"
+          ]
+        },
+        {
+          "quote": {
+            "quote_id": "Q-107",
+            "rfq_id": "RFQ-103",
+            "supplier_id": "S-02",
+            "unit_price_inr": "14100",
+            "offered_qty": 40,
+            "promised_delivery": "2026-12-27",
+            "tax_percent": "12"
+          },
+          "classification": "NON_COMPLIANT",
+          "tax_inclusive_total_inr": "631680.00",
+          "reasons": [
+            "LATE_DELIVERY"
+          ],
+          "duplicate_of": null,
+          "policy_citations": [
+            "R1",
+            "R2",
+            "R3",
+            "R4"
+          ]
+        }
+      ],
+      "information_needed": [],
+      "contract_awarded": false
+    },
+    "explanation": {
+      "rfq_id": "RFQ-103",
+      "summary": "Recommend Q-106 from supplier S-01 for RFQ-103.",
+      "next_action": "Obtain human procurement approval before awarding or contacting a supplier.",
+      "policy_citations": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R9"
+      ],
+      "quote_explanations": [
+        {
+          "quote_id": "Q-106",
+          "evidence_ids": [
+            "supplier_quotes.csv:Q-106",
+            "rfqs.csv:RFQ-103",
+            "suppliers.csv:S-01",
+            "supplier_performance.csv:S-01"
+          ],
+          "narrative": "Q-106 was classified COMPLIANT. Its tax-inclusive total is INR 667520.00."
+        },
+        {
+          "quote_id": "Q-107",
+          "evidence_ids": [
+            "supplier_quotes.csv:Q-107",
+            "rfqs.csv:RFQ-103",
+            "suppliers.csv:S-02",
+            "supplier_performance.csv:S-02"
+          ],
+          "narrative": "Q-107 was classified NON_COMPLIANT. Its tax-inclusive total is INR 631680.00. Recorded reasons: LATE_DELIVERY."
+        }
+      ]
+    }
+  }
+]
